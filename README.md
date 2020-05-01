@@ -1,7 +1,7 @@
 # Getting And Cleaning Data Peer Graded Assignment
 This is the submission for the Coursera's Data Science Specialization - Getting and Cleaning Data Peer Graded Assignment.
 
-##Introduction
+## Introduction
 
 The purpose of this project is to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
