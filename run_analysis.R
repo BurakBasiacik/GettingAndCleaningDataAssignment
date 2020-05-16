@@ -71,23 +71,16 @@ names(merged_clean)<- gsub("tBody", "TimeBody", names(merged_clean))
 names(merged_clean)<- gsub("^t", "Time", names(merged_clean))
 names(merged_clean)<- gsub("^f", "Frequency", names(merged_clean))
 
-names(merged_clean)<- gsub("Subject", "subject", names(merged_clean))
-names(merged_clean)<- gsub("Activity", "activity", names(merged_clean))
+names(merged_clean)<- gsub("subject", "Subject", names(merged_clean))
+names(merged_clean)<- gsub("activity", "Activity", names(merged_clean))
 
 ####create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 ##summarize the table by subject and activity
 
-summarized_data<- merged_clean %>% group_by(subject, activity) %>%
+tidy_data<- merged_clean %>% group_by(Subject, Activity) %>%
       summarise_all(funs(mean))
 
-##Unpivot summarized data to create tidy data
-
-tidy_data<- melt(data= summarized_data, id= c("subject","activity"))
-
-##Capitalize tidy_data column names
-
-colnames(tidy_data)<- c("Subject","Activity","Variable","AverageValue")
 
 ##Write the dataset to a file
 
