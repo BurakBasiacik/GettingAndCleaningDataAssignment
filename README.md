@@ -16,5 +16,3 @@ RStudio with R version 3.5.1 is used to complete this assignment.
 2. Code Book
 3. run_analysis.R
 4. Tidy data set created by run_analysis.R
-
-## run_analysis.R
