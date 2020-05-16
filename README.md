@@ -16,3 +16,13 @@ RStudio with R version 3.5.1 is used to complete this assignment.
 2. Code Book
 3. run_analysis.R
 4. Tidy data set created by run_analysis.R
+
+## run_analysis.R
+
+The script downloads the UCI HAR Dataset, unzips the contents of dataset in the working directory and then does the following:
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.

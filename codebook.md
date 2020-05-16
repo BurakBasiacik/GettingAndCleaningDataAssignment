@@ -1,4 +1,4 @@
-#TidyData.txt CodeBook
+# TidyData.txt CodeBook
 
 Subject: ID of the subject
 Activity: Type of activity done by the subject. There are six types of activities recorded:
